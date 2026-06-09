@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-discord-darkest text-discord-text antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #202225; /* discord-darkest */
+}
+::-webkit-scrollbar-thumb {
+  background: #2f3136; /* discord-darker */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #36393f; /* discord-dark */
+}
